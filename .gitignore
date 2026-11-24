@@ -1,0 +1,22 @@
+build/
+__pycache__/
+*.pyc
+work/
+.venv/
+
+# Stage output outside work/, e.g. a stage re-run by hand. key_secret.bin is
+# the secret key and must never be committable.
+key_*.bin
+context.bin
+ct_*.bin
+results.csv
+diabetes_compute_*/
+nbcc_fhetch_replay_source_*/
+
+# OS and editor files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+*.bak

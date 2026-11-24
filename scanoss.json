@@ -1,0 +1,14 @@
+{
+  "bom": {
+    "include": []
+  },
+  "settings": {
+    "skip": {
+      "patterns": {
+        "scanning": [
+          "niobium-client/**"
+        ]
+      }
+    }
+  }
+}

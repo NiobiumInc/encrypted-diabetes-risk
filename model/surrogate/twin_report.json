@@ -1,0 +1,52 @@
+{
+ "xgb_reference": {
+  "name": "xgb",
+  "auc": 0.8193564768366948,
+  "precision": 0.3909767610748003,
+  "recall": 0.6136201738139336,
+  "f1": 0.4776268367064042
+ },
+ "surrogate_exact": {
+  "name": "surrogate",
+  "auc": 0.8195039789622808,
+  "precision": 0.393249100802361,
+  "recall": 0.6074939450064112,
+  "f1": 0.4774381368267831
+ },
+ "twin": {
+  "name": "twin",
+  "auc": 0.819503352291718,
+  "precision": 0.393229406881284,
+  "recall": 0.6073514745690269,
+  "f1": 0.47737961926091826
+ },
+ "twin_vs_xgb_agreement": 0.9709118640374769,
+ "twin_vs_surrogate_agreement": 0.9999564222682209,
+ "twin_max_err_vs_surrogate": 0.000759485928436554,
+ "margin": {
+  "min": 6.24739185631773e-05,
+  "p01": 0.02091534459366058,
+  "records_within_1e-3": 16,
+  "records_within_1e-4": 2,
+  "records_within_5e-5": 0
+ },
+ "noise_injection": {
+  "sigma=5e-05": {
+   "mean_flips": 0.0,
+   "rate": 0.0
+  },
+  "sigma=0.0001": {
+   "mean_flips": 0.6,
+   "rate": 1.307331953371827e-05
+  },
+  "sigma=0.001": {
+   "mean_flips": 5.8,
+   "rate": 0.0001263754221592766
+  },
+  "sigma=0.01": {
+   "mean_flips": 84.0,
+   "rate": 0.001830264734720558
+  }
+ },
+ "noise_tolerance_stated": "decision flips scale with sigma x density at threshold; at anchor noise 5e-5 expect ~0 flips / 45,895 (0.0000%)"
+}

@@ -1,0 +1,46 @@
+{
+  "n_total": 229474,
+  "n_train": 183579,
+  "n_test": 45895,
+  "positive_rate": 0.1529454317264701,
+  "cv_auc_mean": 0.8164267479799617,
+  "cv_auc_std": 0.0023207743174534583,
+  "test_auc": 0.8193564750043247,
+  "test_pr_auc": 0.4467836107060862,
+  "train_auc": 0.8297618087894181,
+  "auc_generalization_gap": 0.01040533378509334,
+  "operating_threshold_maxF1": 0.6425372362136841,
+  "at_maxF1_threshold": {
+    "accuracy": 0.7962523150670008,
+    "f1_diabetes": 0.4782681470735926,
+    "recall_diabetes": 0.6106282946288645,
+    "precision_diabetes": 0.39306676449009537,
+    "confusion_matrix_[tn,fp,fn,tp]": [
+      32258,
+      6618,
+      2733,
+      4286
+    ]
+  },
+  "at_0.5_threshold": {
+    "accuracy": 0.709881250680902,
+    "recall_diabetes": 0.7897136344208576,
+    "precision_diabetes": 0.31889310781267977
+  },
+  "xgb_params": {
+    "n_estimators": 500,
+    "max_depth": 5,
+    "learning_rate": 0.04,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "min_child_weight": 5.0,
+    "reg_lambda": 2.0,
+    "reg_alpha": 0.0,
+    "gamma": 0.0,
+    "objective": "binary:logistic",
+    "eval_metric": "auc",
+    "tree_method": "hist",
+    "device": "cuda",
+    "scale_pos_weight": 5.538279625039177
+  }
+}
